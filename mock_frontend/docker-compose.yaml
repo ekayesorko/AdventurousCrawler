@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  mock-adidas-server:
+    container_name: mock-adidas-server
+    build:
+      context: .
+    tty: true
+    ports:
+      - '5030:80'
